@@ -45,11 +45,16 @@
         font-weight: bold;
     }
 
+    
     .subtitle {
         width: 100%;
         font-size: 18px;
         padding-left: 4px;
         padding-bottom: 30px;
+        
+        .subtitle_text{
+            white-space: pre-wrap;
+        }
     }
 }
 
@@ -145,6 +150,7 @@ body {
                 @include titles();
             }
 
+
             .box_items {
                 width: 100%;
 
@@ -154,8 +160,6 @@ body {
 
                     .card_one {
                         @include cards_line();
-                        width: 60%;
-                        padding-right: 60px;
                     }
 
                     .card_two {
@@ -236,4 +240,3 @@ body {
         }
     }
 }
-

@@ -171,6 +171,9 @@ body {
   padding-left: 4px;
   padding-bottom: 30px;
 }
+.box_infos .container .box_left .title .subtitle .subtitle_text {
+  white-space: pre-wrap;
+}
 .box_infos .container .box_left .box_items {
   width: 100%;
 }
@@ -180,8 +183,6 @@ body {
 }
 .box_infos .container .box_left .box_items .cards_line_one .card_one {
   color: #fff;
-  width: 60%;
-  padding-right: 60px;
 }
 .box_infos .container .box_left .box_items .cards_line_one .card_one h3 {
   font-size: 30px;
