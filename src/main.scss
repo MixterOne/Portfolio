@@ -189,10 +189,11 @@ body {
 
                     .card {
                         @include card();
-
-                        button {
-                            width: 80%;
-                            padding: 10px 20px;
+                        
+                        .download {
+                            padding: 10px 100px;
+                            text-align: center;
+                            text-decoration: none;
                             background-color: var.$colorPurple;
                             color: var.$colorText;
                             font-weight: bold;

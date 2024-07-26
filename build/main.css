@@ -228,9 +228,10 @@ body {
   font-size: 30px;
   margin-bottom: 20px;
 }
-.box_infos .container .box_left .box_items .cards_line_two .card button {
-  width: 80%;
-  padding: 10px 20px;
+.box_infos .container .box_left .box_items .cards_line_two .card .download {
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
   background-color: #AF63D8;
   color: #fff;
   font-weight: bold;
@@ -239,7 +240,7 @@ body {
   cursor: pointer;
   transition: all 0.6s ease;
 }
-.box_infos .container .box_left .box_items .cards_line_two .card button:hover {
+.box_infos .container .box_left .box_items .cards_line_two .card .download:hover {
   background-color: #c4a0d8;
   color: #000;
 }
