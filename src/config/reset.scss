@@ -1,0 +1,11 @@
+@use 'var';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+b{
+    color: var.$colorPurple;
+}

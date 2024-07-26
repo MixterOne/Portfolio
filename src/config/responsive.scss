@@ -1,0 +1,123 @@
+@use 'var';
+
+@media screen and (max-width: var.$mobile) {
+    .banner_blue {
+        display: none;
+    }
+
+    .box_infos {
+        width: 100%;
+
+        .title {
+            text-align: center;
+
+            h1 {
+                font-size: 70px !important;
+            }
+        }
+
+        .container {
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+
+            .box_left {
+                width: 100% !important;
+
+                .box_items {
+                    .cards_line_one {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        .card_one,
+                        .card_two {
+                            width: 100% !important;
+                            padding: 0px !important;
+                            margin: 10px 0px;
+                        }
+
+                        .logos_effects {
+                            width: 100% !important;
+                        }
+                    }
+
+                    .cards_line_two {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        .card {
+                            width: 100% !important;
+                            margin: 10px 0px;
+                        }
+                    }
+                }
+            }
+
+            .box_right {
+                width: 100% !important;
+
+                .collumn {
+                    text-align: center;
+                    padding: 0px 10px 10px 10px;
+
+                    .box_rocket {
+                        width: 100%;
+                        margin-top: 70px !important;
+                        margin-bottom: 30px !important;
+
+                        img {
+                            width: 200px !important;
+                        }
+                    }
+
+                    .box_social {
+                        max-width: 500px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: var.$mobile) and (max-width: var.$tablet) {
+    .banner_blue {
+        display: none;
+    }
+
+    .box_infos {
+        background-color: red;
+
+        .container {
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+
+            .box_left {
+                width: 100% !important;
+            }
+
+            .box_right {
+                text-align: center;
+                width: 100% !important;
+                padding: 10px !important;
+
+                .box_rocket {
+                    width: 100%;
+                    margin-top: 70px !important;
+                    margin-bottom: 30px !important;
+
+                    img {
+                        width: 200px !important;
+                    }
+                }
+
+                .box_social {
+                    max-width: 700px !important;
+                }
+            }
+        }
+    }
+}
