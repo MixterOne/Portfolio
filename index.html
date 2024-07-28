@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="build/main.css">
 </head>
+
 <body>
     <div class="banner"></div>
     <section class="box_infos">
@@ -25,11 +29,18 @@
                         <div class="cards_line_one">
                             <div class="card_one">
                                 <h3>Sobre</h3>
-                                <p>Profissional Desenvolvedor Web Front-End, com experiência em projetos utilizando <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b>. Focado no desenvolvimento de interfaces atraentes, acessíveis e adaptáveis para diversos dispositivos, visando sempre melhorar a experiência do usuário.</p>
+                                <p>Profissional Desenvolvedor Web Front-End, com experiência em projetos utilizando
+                                    <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b>. Focado no desenvolvimento de interfaces
+                                    atraentes, acessíveis e adaptáveis para diversos dispositivos, visando sempre
+                                    melhorar a experiência do usuário.
+                                </p>
                             </div>
                             <div class="card_two">
                                 <h3>Skills</h3>
-                                <p>Proficiência na linguagem <b>JavaScript</b> e conhecimento em <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b>, <b>Sass</b>, <b>Less</b>, <b>Gulp</b>, <b>Design Responsivo</b>, além de noções em <b>Git</b> e <b>ReactJS</b>.</p>
+                                <p>Proficiência na linguagem <b>JavaScript</b> e conhecimento em <b>HTML</b>,
+                                    <b>CSS</b>, <b>Bootstrap</b>, <b>Sass</b>, <b>Less</b>, <b>Gulp</b>, <b>Design
+                                        Responsivo</b>, além de noções em <b>Git</b> e <b>ReactJS</b>.
+                                </p>
                                 <div class="logos_effects">
                                     <div class="logo_slide">
                                         <img src="images/icons/html.png" alt="HTML">
@@ -77,7 +88,8 @@
                         <div class="cards_line_two">
                             <div class="card">
                                 <h3>Soft Skills</h3>
-                                <p>Trabalho em equipe, pensamento crítico, adaptabilidade, resolução de problemas, comunicação eficaz, organização, proatividade, resiliência.</p>
+                                <p>Trabalho em equipe, pensamento crítico, adaptabilidade, resolução de problemas,
+                                    comunicação eficaz, organização, proatividade, resiliência.</p>
                             </div>
                             <div class="card">
                                 <h3>Formação</h3>
@@ -104,13 +116,15 @@
                         <ul>
                             <li>
                                 <img src="images/icons/linkedin.png" alt="Linkedin">
-                                <a href="https://www.linkedin.com/in/matheus-rodrigues-isaias/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/matheus-rodrigues-isaias/" target="_blank"
+                                    rel="noopener noreferrer">
                                     Linkedin
                                 </a>
                             </li>
                             <li>
                                 <img src="images/icons/whatsapp.png" alt="Whatsapp">
-                                <a href="https://wa.me/5531988952080?text=Olá%20Matheus,%20vim%20pelo%20seu%20Portfólio,%20tudo%20bem?" target="_blank" rel="noopener noreferrer">                  
+                                <a href="https://wa.me/5531988952080?text=Olá%20Matheus,%20vim%20pelo%20seu%20Portfólio,%20tudo%20bem?"
+                                    target="_blank" rel="noopener noreferrer">
                                     Whatsapp
                                 </a>
                             </li>
@@ -123,11 +137,59 @@
                         </ul>
                     </div>
                 </div>
-                <img class="banner_blue" src="images/luz_azul.png" width="300px" style="position: absolute; right: -150px; bottom: 0; z-index: -1;">
+                <img class="banner_blue" src="images/luz_azul.png" width="300px"
+                    style="position: absolute; right: -150px; bottom: 0; z-index: -1;">
             </div>
         </div>
     </section>
-    
+    <section class="projects">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab_button" onclick="showTab('tab1')">Tab One</button>
+                <button class="tab_button" onclick="showTab('tab2')">Tab Two</button>
+                <button class="tab_button" onclick="showTab('tab3')">Tab Three</button>
+            </div>
+            <div id="tab1" class="tab_content">
+                <div class="box_projects">
+                    <div class="project">
+                        <img src="images/The_Link_School.png" alt="Projeto Freelancer The Link School">
+                        <div class="info">
+                            <h2>The Link School</h2>
+                            <p>HTML, CSS e Design Responsivo</p>
+                            <button class="open_modal">Ver mais</button>
+                            <div class="modal_info">
+                                <img src="images/The_Link_School.png" alt="Projeto Freelancer The Link School">
+                                
+                                <div class="content">
+                                    <h4>The Link School - Projeto Freelancer</h4>
+                                    <p>Fui responsável pelo desenvolvimento do design de uma página web para uma instituição educacional dos EUA. Minha expertise em elaborar o design conforme as necessidades do cliente resultou em uma boa avaliação. Realizei alinhamentos com o cliente internacional para definir os critérios do projeto, garantindo que todos os requisitos fossem atendidos. Utilizei HTML, CSS e técnicas de Design Responsivo para criar uma página web funcional e esteticamente agradável.</p>
+                                    <a href="https://projeto-de-escola.vercel.app/" target="_blank" rel="noopener noreferrer">Ir ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab_content" style="display:none;">
+                <h2>Nada ainda...</h2>
+            </div>
+            <div id="tab3" class="tab_content" style="display:none;">
+                <h2>Nada ainda...</h2>
+            </div>
+        </div>
+        <img class="banner_purple" src="images/luz_roxa.png" width="300px"
+            style="position: absolute; left: -150px; bottom: -400px; z-index: -1;">
+    </section>
+
+
+    <div id="modal" class="modal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <div class="modal_body"></div>
+        </div>
+    </div>
+
     <script src="build/js/script.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,8 @@
 @use 'var';
 
 @media screen and (max-width: var.$mobile) {
-    .banner_blue {
+    .banner_blue,
+    .banner_purple {
         display: none;
     }
 
@@ -83,13 +84,12 @@
 }
 
 @media screen and (min-width: var.$mobile) and (max-width: var.$tablet) {
-    .banner_blue {
+    .banner_blue,
+    .banner_purple {
         display: none;
     }
 
     .box_infos {
-        background-color: red;
-
         .container {
             width: 100% !important;
             display: flex;

@@ -1,6 +1,7 @@
 @use 'config/reset';
 @use 'config/var';
 @use 'config/responsive';
+@use 'config/tabs.scss';
 
 @mixin logoEffects() {
     overflow: hidden;

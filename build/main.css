@@ -9,7 +9,8 @@ b {
 }
 
 @media screen and (max-width: 767px) {
-  .banner_blue {
+  .banner_blue,
+  .banner_purple {
     display: none;
   }
   .box_infos {
@@ -73,11 +74,9 @@ b {
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
-  .banner_blue {
+  .banner_blue,
+  .banner_purple {
     display: none;
-  }
-  .box_infos {
-    background-color: red;
   }
   .box_infos .container {
     width: 100% !important;
@@ -104,6 +103,164 @@ b {
     max-width: 700px !important;
   }
 }
+.projects {
+  padding: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+.tabs .tab_button {
+  padding: 20px;
+  width: 100%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.tabs .tab_button:hover {
+  background-color: #AF63D8;
+}
+.tabs .tab_button:first-child {
+  border-right: 0px;
+  border-radius: 40px 0px 0px 40px;
+}
+.tabs .tab_button:last-child {
+  border-left: 0px;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.tab_content {
+  display: none;
+  color: #fff !important;
+  padding: 10px;
+}
+.tab_content:target {
+  display: block;
+}
+.tab_content .box_projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.tab_content .box_projects .project {
+  box-shadow: 2px 2px 5px 0px rgba(121, 121, 121, 0.281);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.tab_content .box_projects .project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.tab_content .box_projects .project .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(100%);
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  transition: transform 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.tab_content .box_projects .project .info h2, .tab_content .box_projects .project .info p {
+  margin: 0;
+  padding: 0;
+}
+.tab_content .box_projects .project .info .open_modal {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #AF63D8;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.tab_content .box_projects .project .info .open_modal:hover {
+  background-color: #9a3ace;
+}
+.tab_content .box_projects .project .info .modal_info {
+  display: none;
+}
+.tab_content .box_projects .project:hover img {
+  transform: scale(1.1);
+}
+.tab_content .box_projects .project:hover .info {
+  transform: translate(-50%, -50%) translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal .modal_content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 1000px;
+}
+.modal .modal_content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .modal_content .close:hover, .modal .modal_content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .modal_content .modal_body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.modal .modal_content .modal_body .modal_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal .modal_content .modal_body img {
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+}
+.modal .modal_content .content {
+  margin-left: 10px;
+}
+.modal .modal_content .content p, .modal .modal_content .content h4 {
+  margin-bottom: 20px;
+  width: 340px;
+}
+.modal .modal_content .content a {
+  background-color: #AF63D8;
+  text-decoration: none;
+  padding: 10px 40px;
+  color: #fff;
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);
