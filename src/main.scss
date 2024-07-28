@@ -46,14 +46,14 @@
         font-weight: bold;
     }
 
-    
+
     .subtitle {
         width: 100%;
         font-size: 18px;
         padding-left: 4px;
         padding-bottom: 30px;
-        
-        .subtitle_text{
+
+        .subtitle_text {
             white-space: pre-wrap;
         }
     }
@@ -190,7 +190,7 @@ body {
 
                     .card {
                         @include card();
-                        
+
                         .download {
                             padding: 10px 100px;
                             text-align: center;

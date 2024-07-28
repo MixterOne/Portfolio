@@ -72,6 +72,67 @@ b {
     max-width: 500px;
     width: 100%;
   }
+  .tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tabs .tab_button {
+    border-radius: 0px !important;
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .tabs .tab_button:first-child {
+    border: 2px solid #fff !important;
+  }
+  .tabs .tab_button:last-child {
+    border: 2px solid #fff !important;
+  }
+  .tab_content .box_projects {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+  .tab_content .box_projects .project {
+    width: 100% !important;
+  }
+  .tab_content .box_projects .info {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .tab_content .box_projects .info .open_modal {
+    padding: 5px 0px;
+    font-size: 12px;
+  }
+  .modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .modal_content .modal_body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .modal_content .modal_body .modal_info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .modal_content .modal_body img {
+    height: 300px !important;
+    margin-bottom: 10px;
+  }
+  .modal_content .content {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .modal_content .content p,
+  .modal_content .content h4 {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .banner_blue,
@@ -103,10 +164,6 @@ b {
     max-width: 700px !important;
   }
 }
-.projects {
-  padding: 10px;
-}
-
 .tabs {
   display: flex;
   justify-content: space-around;
